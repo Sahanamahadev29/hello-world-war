@@ -17,7 +17,7 @@ pipeline {
         }
         stage ('Deploy') { 
              steps {
-                echo "QA"
+               sh "cp -r /home/slave2/workspace/helloworld_project/target/hello-world-war-1.0.0 /opt/tomcat/webapps"
              }
         }
     }           

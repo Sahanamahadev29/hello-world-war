@@ -10,7 +10,9 @@ pipeline {
         }
         stage ('Build') { 
              steps {
-              echo "QA"
+              sh "ls"
+              sh "cd"
+              sh "mvn clean package"
              }
         }
         stage ('Deploy') { 
